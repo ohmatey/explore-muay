@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddGym /> should render with no errors 1`] = `
+<div>
+  <ReactFinalForm
+    component={[Function]}
+    onSubmit={[MockFunction]}
+  />
+</div>
+`;

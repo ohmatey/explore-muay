@@ -1,0 +1,36 @@
+{
+  "name": "muay-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev ./src",
+    "build": "next build ./src",
+    "start": "next start ./src",
+    "test:unit": "jest ./src/** --config=./jest.config.js",
+    "test:unit:watch": "jest ./src/** --config=./jest.config.js --watchAll",
+    "test:unit:coverage": "jest ./src/** --config=./jest.config.js --coverage",
+    "test:e2e": "jest ./tests/** --config=./jest.config.js"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.4.1",
+    "final-form": "^4.18.5",
+    "next": "9.0.5",
+    "prop-types": "^15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-final-form": "^6.3.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4"
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
+    "expect-puppeteer": "^4.3.0",
+    "install": "^0.13.0",
+    "jest": "^24.9.0",
+    "jest-puppeteer": "^4.3.0",
+    "npm": "^6.11.3",
+    "puppeteer": "^1.20.0"
+  }
+}

@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextField /> should render with no errors 1`] = `
+<Field
+  component={[Function]}
+  name="Name"
+/>
+`;

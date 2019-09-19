@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddGymForm /> should render with no errors 1`] = `
+<form>
+  <TextField
+    name="gymName"
+  />
+  <TextField
+    name="gymOwner"
+  />
+  <button
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
