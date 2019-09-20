@@ -17,5 +17,17 @@ describe('gym actions', () => {
     expect(newAction).toEqual(result)
   })
 
+  it('deleteGym should create a DELETE_GYM action', () => {
+    const gymName = 'sitmonchai'
+    const newAction = actions.deleteGym(gymName)
+
+    const result = {
+      type: Types.DELETE_GYM,
+      payload: gymName
+    }
+
+    expect(newAction).toEqual(result)
+  })
+
 
 })

@@ -1,3 +1,7 @@
-const Adapter = require('enzyme-adapter-react-16')
+import Adapter from 'enzyme-adapter-react-16'
+import enzyme from 'enzyme'
 
-require('enzyme').configure({adapter: new Adapter()})
+enzyme.configure({ adapter: new Adapter() })
+
+// set jest global timeout
+jest.setTimeout(30000)

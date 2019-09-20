@@ -4,7 +4,7 @@ module.exports = {
     port: 3000
   },
   launch: {
-    headless: false, //  || process.env.HEADLESS !== 'false'
+    headless: process.env.RUN_HEADLESS || true
   },
   browserContext: 'default'
 }

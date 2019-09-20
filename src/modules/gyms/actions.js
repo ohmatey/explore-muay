@@ -10,3 +10,8 @@ export const addGym = ({
     gymOwner
   }
 })
+
+export const deleteGym = (gymName) => ({
+  type: Types.DELETE_GYM,
+  payload: gymName
+})

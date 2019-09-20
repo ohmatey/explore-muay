@@ -13,6 +13,10 @@ export default (state = initialState, action) => {
           action.payload
         ]
       }
+      case Types.DELETE_GYM:
+        return {
+          gyms: state.gyms.filter(gym => gym.gymName !== action.payload)
+        }
     default:
 
   }

@@ -20,5 +20,13 @@ describe('<NewGymPage />', () => {
 
   it('should render with add gym form', () => {
     expect(component.find(AddGym).length).toEqual(1)
+
+    const mockSubmit = jest.fn()
+
+    component.setProps({
+      handleFormSubmit: mockSubmit
+    })
+
+    expect(component.find(AddGym).prop('handleFormSubmit')).toEqual(mockSubmit)
   })
 })

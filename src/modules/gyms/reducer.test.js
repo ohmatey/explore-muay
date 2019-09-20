@@ -21,5 +21,28 @@ describe('gym reducer', () => {
     })
   })
 
+  it('should delete gym when deleteGym action is sent', () => {
+     const initialState = {
+      gyms: [{
+        gymName: 'Backyard Muay Thai',
+        gymOwner: 'Bob'
+      },
+      {
+        gymName: 'sitmonchai',
+        gymOwner: 'Bobs'
+      }
+    ]
+    }
+    const targetGym = 'sitmonchai'
 
+    const newAction = actions.deleteGym(targetGym)
+    const reducerState = gymsReducer(initialState, newAction)
+
+    expect(reducerState).toEqual({
+      gyms: [{
+        gymName: 'Backyard Muay Thai',
+        gymOwner: 'Bob'
+      }]
+    })
+  })
 })
