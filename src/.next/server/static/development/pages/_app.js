@@ -718,6 +718,11 @@ const initialState = {
         gyms: [...state.gyms, action.payload]
       };
 
+    case _types__WEBPACK_IMPORTED_MODULE_0__["DELETE_GYM"]:
+      return {
+        gyms: state.gyms.filter(gym => gym.gymName !== action.payload)
+      };
+
     default:
   }
 
@@ -730,13 +735,15 @@ const initialState = {
 /*!*******************************!*\
   !*** ./modules/gyms/types.js ***!
   \*******************************/
-/*! exports provided: ADD_GYM */
+/*! exports provided: ADD_GYM, DELETE_GYM */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ADD_GYM", function() { return ADD_GYM; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DELETE_GYM", function() { return DELETE_GYM; });
 const ADD_GYM = 'ADD_GYM';
+const DELETE_GYM = 'DELETE_GYM';
 
 /***/ }),
 

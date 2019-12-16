@@ -1,0 +1,24 @@
+{
+  "devFiles": [
+    "static/development/dll/dll_7eba8c8c3ef1c1fad8a7.js",
+    "static/development/dll/dll_7eba8c8c3ef1c1fad8a7.js.map"
+  ],
+  "pages": {
+    "/_app": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/new-gym": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/next/dist/pages/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ]
+  }
+}
